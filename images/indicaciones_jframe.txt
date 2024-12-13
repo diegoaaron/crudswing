@@ -1,0 +1,64 @@
+Indicaciones para crear un JFRAME
+
+agregar JFRAME
+
+en las propiedades del JFRAME:
+background: AWT > LIGHT_GRAY
+resizable: true
+title: XXXXXX
+en el codigo validamos el tamaño:
+setBounds(100, 100, 640, 480); // x, y, witdh, height
+en las propiedades del getContentPane y definimos:
+Layout: absolute
+background: AWT > LIGHT_GRAY
+agregamos un desktopPane y definimos:
+Layout: absolute
+background: AWT > LIGHT_GRAY
+en el codigo validamos el tamaño:
+desktopPane.setBounds(10, 10, 620, 410); // x, y, witdh, height
+
+agregamos un JMenuBar (debe estar encima del contentPane) y definimos:
+background: AWT > WHITE
+agregamos elementos JMenu para que sean las cabeceras del menu y definimos:
+background: AWT > WHITE
+text: XXXXXX
+agregamos JMenuItem dentro de los JMenu que tendran subitems (y definimos su texto)
+
+agregar JINTERNALFRAME
+
+en las propiedades del JINTERNALFRAME definimos:
+background: AWT > LIGHT_GRAY
+closable: true
+iconifable: true
+maximizable: false
+resizable: false
+title: XXXXXX
+en las propiedades del getContentPane definimos:
+Layout: absolute
+background: AWT > LIGHT_GRAY
+
+Si deseo poner una tabla de datos agrego un SCROLLPANE y dentro TABLE
+propiedades de SCROLLPANE:
+Bounds(10, 10, 620, 410); // x, y, witdh, height
+propiedades de TABLE:
+background: AWT > WHITE
+model: agregan las cabeceras a la tabla
+
+------
+
+MVC Modelo - Vista - Controlador
+es un patrón de arquitectura (de diseño) de software
+
+Modelo: Representa la lógica de negocio y los datos de la aplicación.
+Es responsable de acceder a la base de datos, realizar operaciones sobre los datos y notificar a la vista sobre cualquier cambio en el estado.
+
+Vista: Se encarga de la presentación visual de los datos.
+Es lo que los usuarios ven e interactúan en la interfaz. La vista recibe información del modelo y la muestra al usuario.
+
+Controlador: Actúa como intermediario entre el modelo y la vista.
+Recibe las entradas del usuario desde la vista, procesa estas entradas (posiblemente modificando el modelo) y luego actualiza la vista con los resultados.
+
+Cuando un usuario realiza una acción (por ejemplo, hacer clic en un botón), esta acción es capturada por el controlador. El controlador entonces interactúa con el modelo para obtener o modificar datos, y finalmente actualiza la vista para reflejar cualquier cambio. Este flujo permite una clara separación de responsabilidades, lo que facilita el mantenimiento y escalabilidad del software
+
+
+
