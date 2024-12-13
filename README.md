@@ -14,7 +14,7 @@ Herramientas utilizadas:
 - [Eclipse 2024-09](#)
 - [DB Broswser](#)
 - [Java 17](#)
-- [Indicaciones para crear Jframes](#)
+- [Indicaciones para crear Jframes](images/indicaciones_jframe.txt)
 
 ### Estructura del proyecto
 
